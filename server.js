@@ -14,11 +14,10 @@ const imageurl = require('./controller/image');
 const db = knex({
     client: 'pg',
     connection: {
-      host : 'postgresql-curved-84642',
-      port : 5432,
-      user : 'TBALO',
-      password : '',
-      database : 'smart-brain'
+      host : process.env.DATABASE_URL,
+      ssl: {
+        rejectUnauthorized: false
+      }
     },
     useNullAsDefault: true
   });
