@@ -9,7 +9,7 @@ const handleImage = (req, res, db) => {
     .catch(err => res.status(400).json('unable to get entries'))
 }
 
-const PAT = "88914030ce0d4fbc9efa84f4f524b75c";
+const PAT = process.env.PAT_CLARIFAI;
 const USER_ID = "tbalo";
 const APP_ID = "my-first-application-3y823b";
 const MODEL_ID = 'face-detection';
