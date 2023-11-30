@@ -4,7 +4,7 @@ Backend of the smart-face-detector
 1. Clone this repo
 2. Run `npm install`
 3. Run `npm start`
-4. Add your PAT - Personal Account Token from the Clarifai API in your environment variables as process.env.PAT_CLARIFAI in the controllers/image.js file
+4. Add your PAT - Personal Account Token from your Clarifai account in your environment variables as process.env.PAT_CLARIFAI in the controllers/image.js file
 5. Implement all endpoints in the controller folder
 
 # Technology stack 
